@@ -10,4 +10,8 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MercadoriasApp.Data\MercadoriasApp.Data.csproj" />
+  </ItemGroup>
+
 </Project>
