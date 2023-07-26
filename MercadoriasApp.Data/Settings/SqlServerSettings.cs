@@ -3,10 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace MercadoriasApp.Data.Settings
+namespace ContasApp.Data.Settings
 {
-    internal class SqlServerSettings
+    /// <summary>
+    /// Classe para armazenar a string de conexão do banco de dados
+    /// </summary>
+    public class SqlServerSettings
     {
+        /// <summary>
+        /// Método para retornar a string de conexão do banco de dados
+        /// </summary>
+        public static string GetConnectionString()
+        {
+            return @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDMercadoriasApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;
+            Application Intent=ReadWrite;Multi Subnet Failover=False";
+        }
     }
 }

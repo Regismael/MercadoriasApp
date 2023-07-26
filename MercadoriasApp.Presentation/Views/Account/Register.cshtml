@@ -1,4 +1,8 @@
-﻿@{
+﻿@* Definindo a classe Model para capturar os campos do formulário desta
+página *@
+@model ContasApp.Presentation.Models.AccountRegisterViewModel
+
+@{
     //definindo o layout da página
     Layout = "~/Views/Shared/_AccountLayout.cshtml";
 }
@@ -9,34 +13,65 @@
     </p>
     <hr />
 </div>
-<form>
-    <div class="mb-2">
-        <label>Informe o nome da empresa:</label>
-        <input type="text" class="form-control"
-               placeholder="Ex: Supermecados PreçoBom" />
 
-    </div>
-    <div class="mb-2">
-        <label>Informe o email:</label>
-        <input type="text" class="form-control"
-               placeholder="Ex: mercadopb@gmail.com" />
+<div class="mb-2 text-center">
+    <strong>@TempData["Mensagem"]</strong>
+</div>
 
-    </div>
-    <div class="mb-2">
-        <label>Informe a senha:</label>
-        <input type="password" class="form-control" />
-    </div>
-    <div class="mb-2">
-        <label>Confirme sua senha:</label>
-        <input type="password" class="form-control" />
-    </div>
+@using(Html.BeginForm())
+{
+<div class="mb-2">
+<label>Informe o nome da empresa:</label>
+@Html.TextBoxFor(model => model.Nome,
+new { @class = "form-control",
+
+@placeholder = "Ex: SuperMercados BoaEconomia" })
+
+<span class="text-danger">
+   @Html.ValidationMessageFor(model => model.Nome)
+</span>
+
+</div>
+
+<div class="mb-2">
+<label>Informe o email:</label>
+@Html.TextBoxFor(model => model.Email,
+new { @class = "form-control",
+@placeholder = "Ex: supermercadobe@gmail.com" })
+
+<span class="text-danger">
+@Html.ValidationMessageFor(model => model.Email)
+</span>
+
+</div>
+
+<div class="mb-2">
+<label>Informe a senha:</label>
+@Html.PasswordFor(model => model.Senha,
+new { @class = "form-control"})
+
+<span class="text-danger">
+@Html.ValidationMessageFor(model => model.Senha)
+</span>
+
+</div>
+
+<div class="mb-2">
+<label>Confirme sua senha:</label>
+@Html.PasswordFor(model => model.SenhaConfirm,
+new { @class = "form-control" })
+
+<span class="text-danger">
+@Html.ValidationMessageFor(model => model.SenhaConfirm)
+</span>
+
+</div>
     <div class="mb-2 d-grid">
         <input type="submit" class="btn btn-primary"
                value="Realizar Cadastro" />
-
     </div>
     <div class="mb-2 text-center">
         Já possui conta?
         <a href="/Account/Login">Acesse aqui!</a>
     </div>
-</form>
+}

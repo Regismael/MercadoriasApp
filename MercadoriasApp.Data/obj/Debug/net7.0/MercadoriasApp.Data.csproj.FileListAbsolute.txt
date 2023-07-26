@@ -1,0 +1,12 @@
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\bin\Debug\net7.0\MercadoriasApp.Data.deps.json
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\bin\Debug\net7.0\MercadoriasApp.Data.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\bin\Debug\net7.0\MercadoriasApp.Data.pdb
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.csproj.AssemblyReference.cache
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.AssemblyInfoInputs.cache
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.AssemblyInfo.cs
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.csproj.CoreCompileInputs.cache
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\refint\MercadoriasApp.Data.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\MercadoriasApp.Data.pdb
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Data\obj\Debug\net7.0\ref\MercadoriasApp.Data.dll

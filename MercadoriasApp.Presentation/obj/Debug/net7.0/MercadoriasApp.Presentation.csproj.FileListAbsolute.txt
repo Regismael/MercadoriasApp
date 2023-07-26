@@ -27,3 +27,13 @@ C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\obj\Debug\net7.0\refin
 C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\obj\Debug\net7.0\MercadoriasApp.Presentation.pdb
 C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\obj\Debug\net7.0\MercadoriasApp.Presentation.genruntimeconfig.cache
 C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\obj\Debug\net7.0\ref\MercadoriasApp.Presentation.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\Dapper.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\MercadoriasApp.Data.dll
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\bin\Debug\net7.0\MercadoriasApp.Data.pdb
+C:\aulascchark\MercadoriasApp\MercadoriasApp.Presentation\obj\Debug\net7.0\MercadoriasApp.Presentation.csproj.CopyComplete
