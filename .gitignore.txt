@@ -1,0 +1,134 @@
+# Arquivos e pastas geradas pelo Visual Studio
+obj/
+bin/
+*.dbmdl
+*.pch
+*.suo
+*.user
+*.vs/
+*.vscode/
+
+# Arquivos de build e publicação
+[Dd]ebug/
+[Rr]elease/
+ipch/
+publish/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.[Oo]bj/
+*.[Tt]mp/
+
+# Arquivos de compilação do Visual Studio
+*.dll
+*.exe
+*.pdb
+*.cache
+*.res
+*.resources
+*.ilk
+*.tlog
+*.zip
+*.json
+*.jfm
+*.sass-cache
+*.map
+*.map.js
+*.css.map
+*.js.map
+
+# Arquivos e pastas específicos do projeto
+*.sln
+*.csproj
+*.userprefs
+*.bak
+*.cache
+.vsconfig
+.vsmdi
+*.mdf
+*.ldf
+*.html
+*.htm
+*.html.*
+*.js
+*.css
+*.scss
+*.tsx
+
+# Pastas de pacotes NuGet
+packages/
+
+# Arquivos de configuração
+Web.config
+*.config
+
+# Arquivos de análise de código
+*.CodeLens
+
+# Chave de segurança do aplicativo
+*.pfx
+
+# Arquivos de testes
+TestResults/
+[Tt]est[Rr]esult*/
+*.testsettings
+
+# Arquivos de cache de ferramentas
+*.VisualState.xml
+*.dbmdl
+*.VC.db
+
+# Cache e arquivos temporários do Rider
+.idea/
+*.sln.iml
+*.Rider/
+*.ReSharper*/
+
+# Cache e arquivos temporários do Visual Studio Code
+.vscode/
+
+# Cache e arquivos temporários do Visual Studio for Mac
+*.userprefs
+*.userprefs.*
+*.suo
+*.usertasks
+*.userprefs
+*.sln.ide
+*.sln.dotSettings.user
+
+# Cache e arquivos temporários do Rider for Unity
+RiderUnityGenerated/
+
+# Pasta de dependências de node.js
+node_modules/
+
+# Pasta de dependências de ferramentas de construção
+bower_components/
+
+# Arquivo yarn.lock
+yarn.lock
+
+# Arquivo package-lock.json
+package-lock.json
+
+# Pastas geradas pelo npm
+npm-debug.log
+
+# Logs de erro
+log.txt
+*.log
+
+# Arquivos temporários do macOS
+.DS_Store
+
+# Arquivos temporários do Windows
+Thumbs.db
+
+# Arquivos de histórico de sessão do Visual Studio Code
+*.code-workspace
+
+# Pasta e arquivo de configuração de perfil do JetBrains
+.idea/
+*.jpf
