@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h5>Consulta de mercadorias</h5>
+<p>Informe um período de datas para consultar suas mercadorias:</p>
+<hr />
+<form>
+    <div class="row mb-2">
+        <div class="col">
+            <input type="date" class="form-control" />
+        </div>
+        <div class="col">
+            <input type="date" class="form-control" />
+        </div>
+        <div class="col">
+            <div>
+                <input type="checkbox" checked /> Alimentos
+            </div>
+
+            <div>
+                <input type="checkbox" checked /> Transporte
+            </div>
+
+            <div>
+                <input type="checkbox" checked /> Eletrônicos
+            </div>
+
+            <div>
+                <input type="checkbox" checked /> Roupas
+            </div>
+
+        </div>
+        <div class="col">
+            <input type="submit" class="btn btn-success"
+                   value="Pesquisar Mercadorias" />
+
+        </div>
+    </div>
+    <div class="table-responsive mb-2">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número de registro</th>
+                    <th>fabricante</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Local</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">
+                        Quantidade de mercadorias obtidas: 0
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</form>

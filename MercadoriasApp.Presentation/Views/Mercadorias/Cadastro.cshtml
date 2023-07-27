@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5>Cadastro de contas</h5>
+<p>Faça o cadastro das suas mercadorias para gerenciar seu fluxo.</p>
+<hr />
+
+<form>
+    <div class="row mb-2">
+        <div class="col">
+            <label>Nome da mercadoria:</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="col">
+            <label>Número de registro:</label>
+            <input type="text" class="form-control" />
+        </div>
+
+        <div class="col">
+            <label>Fabricante:</label>
+            <input type="text" class="form-control" />
+        </div>
+
+        <div class="col">
+            <label>Tipo de mercadoria:</label>
+            <div>
+                <input type="radio" name="tipo" /> Alimento
+            </div>
+            <div>
+                <input type="radio" name="tipo" /> Transporte
+            </div>
+
+            <div>
+                <input type="radio" name="tipo" /> Eletrônicos
+            </div>
+
+            <div>
+                <input type="radio" name="tipo" /> Roupas
+            </div>
+
+        </div>
+    </div>
+        <div class="col">
+            <label>Descrição da mercadoria:</label>
+<textarea class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <input type="submit" class="btn btn-success"
+               value="Cadastrar Mercadoria" />
+
+    </div>
+</form>
