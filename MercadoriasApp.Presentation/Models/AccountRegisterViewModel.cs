@@ -15,11 +15,11 @@ namespace ContasApp.Presentation.Models
     [EmailAddress(ErrorMessage = "Por favor, informe um endereço de email válido.")]
     [Required(ErrorMessage = "Por favor, informe o email do usuário.")]
     public string? Email { get; set; }
-    [RegularExpression("@^(?=.*[a-z])(?=.*[A-Z]) (?=.*\\d)(?=.*[^\\da - zA - Z]).{8,}$",ErrorMessage = 
-        "Informe uma senha com letras maísculas, letras " +
-        "minúsculas, números, símbolos e no mínimo 8 caracteres.")]
+    [RegularExpression(@"^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=\[{\]};:<>|./?,-])(?!.*\s).{8,}$",
+     ErrorMessage = "A senha deve ter no mínimo 8 caracteres, uma letra maiúscula, um símbolo e números.")]
     [Required(ErrorMessage = "Por favor, informe a senha do usuário.")]
     public string? Senha { get; set; }
+
     [Compare("Senha", ErrorMessage = "Senhas não conferem, por favor verifique.")]
     [Required(ErrorMessage = "Por favor, confirme a senha do usuário.")]
     public string? SenhaConfirm { get; set; }

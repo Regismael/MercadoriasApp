@@ -15,8 +15,7 @@ namespace ContasApp.Data.Settings
         /// </summary>
         public static string GetConnectionString()
         {
-            return @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDMercadoriasApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;
-            Application Intent=ReadWrite;Multi Subnet Failover=False";
+            return @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDMercadoriasApp;Integrated Security=True;Connect Timeout=30;Encrypt=False";
         }
     }
 }

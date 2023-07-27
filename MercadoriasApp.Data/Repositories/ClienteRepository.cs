@@ -31,7 +31,7 @@ namespace ContasApp.Data.Repositories
              @Id,
              @Nome,
              @Email,
-             @Senha,
+             CONVERT(VARCHAR(32), HASHBYTES('MD5', @Senha), 2),
              @DataHoraCriacao)
 ";
             //abrindo conexão com o banco de dados..
@@ -55,8 +55,8 @@ namespace ContasApp.Data.Repositories
              SET
              NOME = @Nome,
              EMAIL = @Email,
-             SENHA = @Senha
-
+             SENHA = CONVERT(VARCHAR(32), 
+             HASHBYTES('MD5', @Senha), 2),
              WHERE
              ID = @Id
 ";
@@ -66,6 +66,28 @@ namespace ContasApp.Data.Repositories
             {
                 connection.Execute(query, cliente);
             }
+        }
+        /// <summary>
+        /// Método para atualizar somente a senha do cliente
+        /// </summary>
+        public void UpdatePassword(Guid idCliente, string senha)
+        {
+            var query = @"
+             UPDATE USUARIO
+             SET
+             SENHA = CONVERT(VARCHAR(32),
+             HASHBYTES('MD5', @Senha), 2)
+             WHERE
+             IDUSUARIO = @IdUsuario
+";
+         using(var connection = new SqlConnection
+         (SqlServerSettings.GetConnectionString()))
+
+         {
+             connection.Execute(query,
+             new { @IdCliente = idCliente, @Senha = senha });
+
+         }
         }
         /// <summary>
         /// Método para excluir um cliente do banco de dados
@@ -133,7 +155,8 @@ namespace ContasApp.Data.Repositories
             var query = @"
              SELECT * FROM CLIENTE 
              WHERE EMAIL = @Email
-             AND SENHA = @Senha
+             AND SENHA = CONVERT(VARCHAR(32),
+             HASHBYTES('MD5', @Senha), 2)
 
 ";
             using (var connection = new SqlConnection
